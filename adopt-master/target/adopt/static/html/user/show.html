@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Animal Specific Information</title>
+
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link href="../css/jquery.slideBox.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/show.css">
+    <script src="../js/jquery-2.2.3.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script src="../js/jquery.slideBox.min.js" type="text/javascript"></script>
+    <script src="../js/jquery.comment.js"></script>
+</head>
+<body>
+<div>
+<div>
+    <h2>animal for adoption</h2>
+<center>
+<div id="demo1" class="slideBox">
+<ul class="items">
+    <li><a href="" ><img class="my-img" src="../images/1.jpg"></a></li>
+    <li><a href="" ><img class="my-img" src="../images/2.jpg"></a></li>
+    <li><a href="" ><img class="my-img" src="../images/3.jpg"></a></li>
+    <li><a href="" ><img class="my-img" src="../images/4.jpg"></a></li>
+</ul>
+</div>
+    <div class="name">
+        <img src="../images/p9.jpg">
+        <span>kitty</span>
+    </div>
+</center>
+    <div class="animal">
+        <div class="group">
+        <div class="animalX1">
+            <img src="../images/P7.jpg"><span>number</span><br>
+            <p>123123</p>
+        </div>
+        <div class="animalX2">
+            <img src="../images/P6.jpg"><span>birthday</span><br>
+            <p>2022/09/23</p>
+        </div>
+        </div>
+        <div class="group">
+            <div class="animalX3">
+                <img src="../images/catsm1.jpg"><span>Breed</span><br>
+                <p>Persian</p>
+            </div>
+            <div class="animalX4">
+                <img src="../images/p4.jpg"><span>Gender</span><br>
+                <p>Male</p>
+            </div>
+        </div>
+        <div class="group">
+            <div class="animalX5">
+                <img src="../images/p8.jpg"><span>Note</span><br>
+                <p>lively</p>
+            </div>
+        </div>
+    </div>
+<div class="animal_me">
+    <div class="animal_me1"><img src="../images/p11.jpg"></div>
+    <div class="animal_me2"><p>Hello everyone, I am Sallon. My characteristic is erect and folded ears and talking eyes. I am very energetic, and I love playing with people, watching TV, and doing sports. I love meeting friends and I am confident that I can get along with most dogs.
+        I am ready to be your good friend, can you take me home and give me warmth?</p></div>
+    <div class="animal_me3"><img src="../images/p10.jpg"></div>
+</div>
+<div class="my_btn">
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">want to adopt</button>
+</div>
+</div>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Please input personal information
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" id="new_department_form">
+                    <div class="form-group">
+                        <label for="new_Name" class="col-sm-2 control-label">
+                            Name： </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="new_Name"
+                                   placeholder="name" name="name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="new_Sex" class="col-sm-2 control-label">
+                            Gender： </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="new_Sex"
+                                   placeholder="sex" name="sex">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="new_tel" class="col-sm-2 control-label">
+                            Contact info： </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="new_tel"
+                                   placeholder="telephone" name="telephone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="new_Email" class="col-sm-2 control-label">
+                            Email： </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="new_Email"
+                                   placeholder="Email" name="new_Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="new_Adress" class="col-sm-2 control-label">
+                            Address： </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="new_Adress"
+                                   placeholder="adress" name="address">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="new_remark" class="col-sm-2 control-label">
+                            Notes： </label>
+                        <div class="col-sm-10">
+                            <textarea type="text" class="form-control" id="new_remark"
+                            placeholder="remark" name="remark"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">close
+                </button>
+                <button type="button" class="btn btn-primary">submit apply</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+    <div class="comment-list">
+
+    </div>
+    <div class="container">
+        <div class="commentbox">
+            <textarea cols="80" rows="50" placeholder="Say something......" class="mytextarea" id="content"></textarea>
+            <div class="btn btn-info pull-right" id="comment">Comment</div>
+        </div>
+
+    </div>
+</div>
+<script>
+    jQuery(function($){
+        $('#demo1').slideBox();
+
+    });
+
+    $(function(){
+        $("#comment").click(function(){
+            var obj = new Object();
+            obj.img="./images/img.jpg";
+            obj.replyName="anonymous";
+            obj.content=$("#content").val();
+            obj.browse="Ottawa";
+            obj.osname="win10";
+            obj.replyBody="";
+            $(".comment-list").addCommentList({data:[],add:obj});
+        });
+    })
+</script>
+</body>
+</html>
+

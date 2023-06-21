@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>edit personal information</title>
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+    <!-- bootstrap -->
+    <!-- bootstrap -->
+    <link href="../bootstrap/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="../bootstrap/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="../bootstrap/bootstrap/bootstrap-overrides.css" type="text/css" rel="stylesheet" />
+
+
+    <!-- global styles -->
+    <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../css/elements.css" />
+    <link rel="stylesheet" type="text/css" href="../css/icons.css" />
+
+
+
+    <!-- this page specific styles 游泳-->
+    <link rel="stylesheet" href="../css/personal-info.css" type="text/css" media="screen" />
+
+    <!-- open sans font -->
+    <link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css' />
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+    <!-- end navbar -->
+
+	<!-- main container .wide-content is used for this layout without sidebar :)  -->
+    <div class="content wide-content">
+        <div class="container-fluid">
+            <div class="settings-wrapper" id="pad-wrapper">
+
+                <!-- avatar column -->
+                <div class="span3 avatar-box">
+                    <div class="personal-image">
+                        <img src="img/personal-info.png" class="avatar img-circle" />
+                        <p>upload profile</p>
+                        <input type="file" />
+                    </div>
+                </div>
+
+                <!-- edit form column -->
+                <div class="span7 personal-info">
+                    <h5 class="personal-title">edit personal information</h5>
+                    <form />
+                        <div class="field-box">
+                            <label>user:</label>
+                            <input type="text" class="span5 inline-input" id="edit_userName" placeholder="user name" name="userName" value="${user.userName}" />
+                        </div>
+                        <div class="field-box">
+                            <label>password:</label>
+                            <input type="text" class="span5 inline-input" id="edit_password" placeholder="user password" name="password" value="${user.password}"/>
+                        </div>
+                        <div class="field-box">
+                            <label>age:</label>
+                            <input type="text" class="span5 inline-input" id="edit_age" placeholder="age" name="age" value="${user.age}"/>
+                        </div>
+                        <div class="field-box">
+                            <label>gender:</label>
+                            <div class="ui-select">
+                            <select id="edit_sex" name="sex" value="${user.sex}">
+                                <option value="male">male</option>
+                                <option value="female">female</option>
+                            </select>
+                            </div>
+                        </div>
+
+                        <div class="field-box">
+                            <label>phone number:</label>
+                            <input type="text" class="span5 inline-input" id="edit_telephone" placeholder="phone number" name="telephone" value="${user.telephone}" />
+                        </div>
+                        <div class="field-box">
+                            <label>Email:</label>
+                            <input type="text" class="span5 inline-input" id="edit_Email" placeholder="Email"  name="Email" value="${user.email}"/>
+                        </div>
+
+                        <div class="field-box">
+                            <label>address:</label>
+                            <input type="text" class="span5 inline-input" id="edit_address" placeholder="address" name="address" value="${user.address}"/>
+                        </div>
+                        <div class="field-box">
+                            <label>Any adopt experience:</label>
+                            <div class="ui-select">
+                                <select id="edit_state" name="state" value="${user.state}">
+                                    <option value="0">had adopt experience</option>
+                                    <option value="1">no adopt experience</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="span6 field-box actions">
+                            <input type="button" class="btn-glow primary" value="submit edit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
